@@ -6,7 +6,7 @@ while (await Console.In.ReadLineAsync() is { } line)
     bingoCards.Add(await BingoCard.ReadFromInputAsync());
 }
 
-BingoCard lastWon = null;
+BingoCard? lastWon = null;
 int lastWonNumber = 0;
 
 foreach (var draw in drawnNumbers)
