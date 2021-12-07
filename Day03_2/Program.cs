@@ -1,9 +1,5 @@
-﻿using System.Runtime.CompilerServices;
-
-List<string> validMostCommon = new();
+﻿List<string> validMostCommon = new();
 List<string> validLeastCommon = new();
-(int zeroes, int ones)[]? counters = null;
-
 while (await Console.In.ReadLineAsync() is { } line)
 {
     validLeastCommon.Add(line);
