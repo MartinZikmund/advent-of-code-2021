@@ -1,7 +1,4 @@
-﻿using System.Linq;
-using System.Runtime.CompilerServices;
-
-List<string> input = new List<string>();
+﻿List<string> input = new List<string>();
 var directions = new (int x, int y)[]
 {
     (-1, 0), (1, 0), (0, -1), (0, 1)
