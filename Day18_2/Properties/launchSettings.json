@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Day18_2": {
+      "commandName": "Project",
+      "commandLineArgs": "< input.txt > output.txt",
+      "workingDirectory": "C:\\dev\\advent-of-code-2021\\Day18_2"
+    }
+  }
+}
