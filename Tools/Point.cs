@@ -12,6 +12,9 @@ public struct Point
 
     public static Point operator +(Point a, Point b) => new Point(a.X + b.X, a.Y + b.Y);
 
+    public static bool operator ==(Point a, Point b) => a.X == b.X && a.Y == b.Y;
+    public static bool operator !=(Point a, Point b) => !(a == b);
+
     public void Deconstruct(out int x, out int y)
     {
         x = X;
