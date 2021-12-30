@@ -24,27 +24,27 @@ using Tools;
 //    }
 //}
 
-//var aluProgram = AluProgram.Read();
-//var states = new List<(string x, string y, string z)>();
-//for (int batchId = 0; batchId < aluProgram.Batches.Length; batchId++)
-//{
-//    var state = ($"x{batchId}", $"y{batchId}", $"z{batchId}");
-//    var resultState = aluProgram.Batches[batchId].ProcessInput($"w{batchId + 1}", state);
-//    Console.WriteLine($"x: " + resultState.x);
-//    Console.WriteLine($"y: " + resultState.y);
-//    Console.WriteLine($"z: " + resultState.z);
-//}
-
-var alu = AluProgram.Read();
-var z = "0";
-var i = 0;
-foreach (byte b in new byte[] { 9, 4, 9, 9, 2, 9, 9, 2, 7, 9, 6, 1, 9, 9 })
+var aluProgram = AluProgram.Read();
+var states = new List<(string x, string y, string z)>();
+for (int batchId = 0; batchId < aluProgram.Batches.Length; batchId++)
 {
-    z = alu.Batches[i].ProcessInput(b.ToString(), ("0", "0", z.ToString())).z;
-    i++;
-    Console.WriteLine($"After {i}: {z}");
+    var state = ($"x{batchId}", $"y{batchId}", $"z{batchId}");
+    var resultState = aluProgram.Batches[batchId].ProcessInput($"w{batchId + 1}", state);
+    Console.WriteLine($"x: " + resultState.x);
+    Console.WriteLine($"y: " + resultState.y);
+    Console.WriteLine($"z: " + resultState.z);
 }
-Console.WriteLine(z);
+
+//var alu = AluProgram.Read();
+//var z = "0";
+//var i = 0;
+//foreach (byte b in new byte[] { 11931881141161 })
+//{
+//    z = alu.Batches[i].ProcessInput(b.ToString(), ("0", "0", z.ToString())).z;
+//    i++;
+//    Console.WriteLine($"After {i}: {z}");
+//}
+//Console.WriteLine(z);
 
 public class AluProgram
 {

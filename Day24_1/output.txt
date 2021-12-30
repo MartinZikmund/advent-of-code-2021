@@ -1,0 +1,15 @@
+After 1: 15
+After 2: 405
+After 3: 10544
+After 4: 274159
+After 5: 7128144
+After 6: 274159
+After 7: 7128152
+After 8: 274159
+After 9: 10544
+After 10: 274166
+After 11: 10544
+After 12: 405
+After 13: 15
+After 14: 0
+0
